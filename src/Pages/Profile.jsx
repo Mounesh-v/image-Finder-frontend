@@ -37,7 +37,7 @@ const Profile = () => {
   const fetchLikedImages = async (token) => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/image/likes",
+        "https://image-finder-backend-21l9.onrender.com/api/image/likes",
         {
           headers: {
             Authorization: `Bearer ${token}`,
