@@ -11,7 +11,7 @@ const ImageState = (props) => {
 
   const scrollPositionRef = useRef(0);
 
-  const Api_Key = "49604126-b604d931bdc6986fefd2d0c4a";
+  const Api_Key = import.meta.env.VITE_PIX_API_KEY;
 
   const FetchImages = async (searchQuery = query, pageParam = 1, append = false) => {
     setLoading(true);
