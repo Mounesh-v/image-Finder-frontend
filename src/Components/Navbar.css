@@ -365,7 +365,7 @@
   overflow-y: auto;
 }
 
-.mobile-menu-close{
+.mobile-menu-close {
   z-index: 2000;
   position: sticky;
   margin: 5px 110px;
@@ -509,7 +509,7 @@
 @media (max-width: 1024px) {
   .navbar-container {
     padding: 1rem 1.5rem;
-    gap: 1.5rem;
+    gap: 155px;
   }
 
   .search-container {
@@ -538,7 +538,7 @@
 
   .navbar-container {
     padding: 1rem;
-    gap: 1rem;
+    gap: 155px;
     flex-wrap: wrap;
   }
 
@@ -582,7 +582,7 @@
   }
 
   .logo-text {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 
   .hamburger-menu {

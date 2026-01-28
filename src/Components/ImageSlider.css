@@ -110,14 +110,14 @@
 }
 
 /* Dots */
-.slider-dots {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 0.6rem;
-  z-index: 3;
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.6);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
 }
 
 .dot {
@@ -235,9 +235,9 @@
   }
 
   .dot {
-    width: 8px;
-    height: 8px;
-    border-width: 1.5px;
+    width: 2px;
+    height: 2px;
+    border-width: 1px;
   }
 }
 
