@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding-top: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-transparent {
+  /* background: #FFD700; Solid yellow background */
+  background-color: rgba(57, 57, 57, 0.477);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 999;
+  /* border-bottom: 2px solid #FFA500; Orange border for definition */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .nav-link {
+  color: white !important; /* Dark text for contrast on yellow */
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-shadow: none;
+}
+
+.navbar-transparent .navbar-brand:hover,
+.navbar-transparent .nav-link:hover {
+  color: white  !important; /* Even darker on hover */
+  transform: translateY(-1px);
+}
+
+.form-control {
+  color: #212529;
+}
+
+.navbar-transparent.scrolled {
+  /* background: #FFC107; Slightly darker yellow when scrolled */
+  background-color: rgba(57, 57, 57, 0.477);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  /* border-bottom: 2px solid #FF8C00; */
+}
+
+.navbar-transparent.scrolled .navbar-brand,
+.navbar-transparent.scrolled .nav-link {
+  color: white !important;
+}
+
+.navbar-transparent.scrolled .navbar-brand:hover,
+.navbar-transparent.scrolled .nav-link:hover {
+  color: white !important;
+}
+
+/* Button styling */
+.navbar-transparent .btn-outline-light {
+  /* border-color: #2D3748; */
+  color: white;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar-transparent .btn-outline-light:hover {
+  background-color: #2D3748;
+  /* border-color: #2D3748; */
+  /* color: #FFD700; */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 55, 72, 0.3);
+}
+
+.navbar-transparent .btn-primary {
+  background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+  border: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
+.navbar-transparent .btn-primary:hover {
+  background: linear-gradient(135deg, #F7931E 0%, #FF6B35 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 107, 53, 0.5);
+}
+
+/* Dropdown styling */
+.navbar-transparent .dropdown-menu {
+  background: #FFF8DC; /* Light yellow background */
+  /* border: 2px solid #FFD700; */
+  box-shadow: 0 8px 32px rgba(255, 215, 0, 0.2);
+  margin-top: 8px;
+}
+
+.navbar-transparent .dropdown-item {
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.navbar-transparent .dropdown-item:hover {
+  /* background: #FFD700; */
+  color: white;
+}
+
+/* Avatar styling */
+.navbar-transparent .rounded-circle {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.navbar-transparent .rounded-circle:hover {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+/* Toggler styling */
+.navbar-transparent .navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.navbar-transparent .navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-transparent .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .navbar-transparent .navbar-collapse {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 10px 10px;
+    margin-top: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+    /* border: 2px solid #FFA500; */
+    border-top: none;
+  }
+
+  .navbar-transparent .nav-item {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Center search on mobile */
+  .navbar-transparent .d-flex.justify-content-center {
+    order: -1;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Search bar styling */
+.search-group {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.search-group .form-control {
+  border-radius: 25px 0 0 25px !important;
+  padding: 0.5rem 1rem;
+}
+
+.search-group .btn {
+  border-radius: 0 25px 25px 0 !important;
+  border-left: none;
+}
