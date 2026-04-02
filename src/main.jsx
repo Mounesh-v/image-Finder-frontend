@@ -1,16 +1,19 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./index.css";
-import ImageState from './Context/ImageState';
-import { BrowserRouter } from 'react-router-dom';
+import ImageState from "./Context/ImageState";
+import { BrowserRouter } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 
-createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-  <ImageState>
-    <App />
-  </ImageState>
-  </BrowserRouter>
-)
+createRoot(document.getElementById("root")).render(
+  <HelmetProvider>
+    <BrowserRouter>
+      <ImageState>
+        <App />
+      </ImageState>
+    </BrowserRouter>
+  </HelmetProvider>,
+);

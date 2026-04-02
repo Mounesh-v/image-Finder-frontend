@@ -13,6 +13,13 @@ import NotFound from "./Pages/NotFound";
 function App() {
   return (
     <div className="app-container">
+      <Helmet>
+        <title>Free Image Finder Tool | Search HD Images</title>
+        <meta
+          name="description"
+          content="Find and download high-quality images instantly using our free image finder tool."
+        />
+      </Helmet>
       <Navbar />
       <main className="main-content">
         <Routes>
