@@ -17,7 +17,7 @@ function App() {
         <title>Free Image Finder Tool | Search HD Images</title>
         <meta
           name="description"
-          content="Find and download high-quality images instantly using our free image finder tool."
+          content="Find and download high-quality images instantly using our free image finder tool. Free image finder tool to search and download HD images online easily."
         />
       </Helmet>
       <Navbar />
