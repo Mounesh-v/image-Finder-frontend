@@ -9,6 +9,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./Components/Footer";
 import NotFound from "./Pages/NotFound";
+import { Helmet } from "react-helmet-async";
 
 function App() {
   return (
